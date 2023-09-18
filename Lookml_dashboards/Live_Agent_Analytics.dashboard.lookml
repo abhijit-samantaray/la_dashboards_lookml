@@ -5,9 +5,9 @@
   description: ''
   preferred_slug: 9MwunYpWg6SCVEILGgKiM4
   elements:
-  - title: qai_la_analytics
-    name: qai_la_analytics
-    model: qai_la_analytics
+  - title: qai_la_analytic
+    name: qai_la_analytic
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.count_distinct_callid]
@@ -33,7 +33,7 @@
     height: 3
   - title: Average Session Per Day
     name: Average Session Per Day
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.call_id, ccai_to_bq_cleaned_copy.start_time_date,
@@ -59,7 +59,7 @@
     height: 3
   - title: Busiest Hour
     name: Busiest Hour
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.Hour_bucket, ccai_to_bq_cleaned_copy.start_time_hour_of_day,
@@ -86,7 +86,7 @@
     height: 3
   - title: New Tile
     name: New Tile
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.avg_callback]
@@ -113,7 +113,7 @@
     height: 3
   - title: New Tile
     name: New Tile (2)
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.avg_Total_Call_Duration]
@@ -138,7 +138,7 @@
     height: 3
   - title: New Tile
     name: New Tile (3)
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.per_calls_beyond_avg_call_Length]
@@ -164,7 +164,7 @@
     height: 3
   - title: New Tile
     name: New Tile (4)
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.avg_silence_duration]
@@ -189,7 +189,7 @@
     height: 3
   - title: New Tile
     name: New Tile (5)
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: single_value
     fields: [ccai_to_bq_cleaned_copy.avg_talk_time]
@@ -214,7 +214,7 @@
     height: 3
   - title: Agent vs User Talk Time & Silence Time
     name: Agent vs User Talk Time & Silence Time
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: looker_column
     fields: [ccai_to_bq_cleaned_copy.avg_agent_silence1, ccai_to_bq_cleaned_copy.avg_agent_talk_time1,
@@ -288,7 +288,7 @@
     height: 7
   - title: Silence Time Distribution
     name: Silence Time Distribution
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: looker_column
     fields: [ccai_to_bq_cleaned_copy.sil_time_bucket, ccai_to_bq_cleaned_copy.silence_duration_percentage]
@@ -344,7 +344,7 @@
     height: 7
   - title: Trend of Silence Time With Respect to Business Hours
     name: Trend of Silence Time With Respect to Business Hours
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: looker_column
     fields: [ccai_to_bq_cleaned_copy.Business_hour_bucket, ccai_to_bq_cleaned_copy.avg_silence_duration]
@@ -463,7 +463,7 @@
     height: 7
   - title: Keywords Around Silence Time
     name: Keywords Around Silence Time
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: looker_wordcloud
     fields: [ccai_to_bq_cleaned_copy.bigrams, ccai_to_bq_cleaned_copy.sil_time_bucket,
@@ -516,7 +516,7 @@
     height: 10
   - title: Call Distribution By Topic
     name: Call Distribution By Topic
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     type: looker_pie
     fields: [ccai_to_bq_cleaned_copy.topic_name, ccai_to_bq_cleaned_copy.count]
@@ -612,7 +612,7 @@
       type: advanced
       display: popover
       options: []
-    model: qai_la_analytics
+    model: qai_la_analytic
     explore: ccai_to_bq_cleaned_copy
     listens_to_filters: []
     field: ccai_to_bq_cleaned_copy.start_time_date
